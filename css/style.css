@@ -1,0 +1,415 @@
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+header {
+  overflow: hidden;
+  height: 100px;
+  margin: 0px 5%;
+}
+
+.top-logo {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+nav a {
+  color: #469191;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  float: right;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.nav a {
+  color: #469191;
+  text-align: center;
+  padding: 14px 48px;
+  text-decoration: none;
+  font-size: 20px;
+  float: right;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.case-study-hero {
+  height: calc(100vh - 120px);
+  background-image: url("../images/case-study-hero.png");
+  background-size: cover;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero {
+  height: calc(100vh - 120px);
+  position: relative;
+  margin-bottom: 20px;
+  top: 100px;
+  /* background-color: pink; */
+}
+
+.hero p {
+  font-size: 50px;
+  font-weight: 300;
+  color: #707070;
+}
+
+.hero .hello {
+  font-style: italic;
+  font-size: 36px;
+}
+
+.hero .name {
+  font-weight: 400;
+  color: #469191;
+}
+
+.hero-text { 
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: auto;
+} 
+.arrow {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+
+hr {
+  border: 1px solid #469191;
+  width: 30%;
+}
+
+h1 {
+  color: #469191;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 80px;
+}
+
+h2 {
+  color: #469191;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+h3 {
+  color: #469191;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.workGrid {
+  margin: 80px 15%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "SoLocal DoSiDo"
+  "Ed CA";
+  grid-gap: 10px; 
+}
+
+.SoLocal {
+  grid-area: SoLocal;
+}
+
+.DoSiDo {
+  grid-area: DoSiDo;
+}
+
+.Ed {
+  grid-area: Ed;
+}
+
+.CA {
+  grid-area: CA;
+}
+
+.SoLocal img, .DoSiDo img, .Ed img, .CA img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.jumbotron {
+  margin: 30px 15%;
+  padding: 50px;
+  background-color: white;
+} 
+
+.overview {
+  margin-bottom: 0;
+  height: 670px;
+}
+
+.overview h2 {
+  margin-bottom: 30px;
+}
+
+.overview img {
+  position: relative;
+  float: left;
+  box-shadow: 10px 10px #469191;
+  width: 45%;
+  height: auto;
+  margin: 0 50px 30px 0;
+  padding: none;
+}
+
+.overview .column1, .overview .column2 {
+  float: left;
+  width: 35%;
+  color: #707070;
+  font-size: 18px;
+}
+
+.overview .column1 {
+  font-weight: 700;
+}
+
+/* Clear floats after the columns */
+.overview .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.overview .row {
+  margin-bottom: 30px;
+}
+
+.overview2 {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.overview2 p {
+  color: #707070;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.interviews .column {
+  float: left;
+  width: 50%;
+  color: #707070;
+  font-size: 18px;
+}
+
+/* Clear floats after the columns */
+.interviews .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.interviews p, .surveys p, .final-product p, .final-product ul, .moving-forward p, .moving-forward ul {
+  color: #707070;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.wireframes h2, .final-product h2, .moving-forward h2 {
+  margin-bottom: 30px;
+}
+
+.surveys img, .wireframes img {
+  max-width: 100%;
+}
+
+.final-product img {
+  position: relative;
+  float: right;
+  width: 48%;
+  height: auto;
+  margin: 0 0 70px 20px;
+  text-align: center;
+}
+
+.final-product {
+  height: 650px;
+}
+
+.final-product .button {
+  padding: 15px;
+  margin: 20px;
+  background-color: #469191;
+  border-radius: 25px;
+  width: 20%;
+  height: 50px;
+  margin-left: 120px;
+  text-align: center;
+}
+
+.final-product .button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.moving-forward img {
+  position: relative;
+  float: left;
+  width: 30%;
+  height: auto;
+  margin: 0 100px 30px 0;
+  padding: none;
+}
+
+.moving-forward {
+  height: 700px;
+}
+
+.about {
+  margin: 80px 15%;
+}
+
+.about .container {
+  position: relative;
+  float: right;
+  width: 48%;
+  height: 100%;
+  margin: 0 0 70px 20px;
+  text-align: center;
+}
+
+.about .container img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 10px 10px #469191;
+}
+
+.about .button {
+  position: absolute;
+  padding: 15px;
+  margin: 20px;
+  background-color: #469191;
+  border-radius: 25px;
+  width: 40%;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.about .button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #707070;
+}
+
+.about p a {
+  color: #469191;
+}
+
+.about h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #469191;
+}
+
+footer {
+  background-color: #469191;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-logo, .social {
+  margin: 100px 10%;
+}
+
+.social {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+ 
+.fa-instagram, .fa-linkedin, .fa-envelope {
+  background: white;
+  color: #469191;
+}
+
+@media only screen and (max-width: 600px) {
+  .workGrid {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "SoLocal"
+    "DoSiDo"
+    "Ed"
+    "CA";
+    grid-gap: 4px; 
+  }
+
+  .hero p {
+    font-size: 38px;
+  }
+
+  .hero .hello {
+    font-size: 26px;
+  }
+
+  .about .container {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .about {
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .footer-content {
+    flex-direction: column-reverse;
+    padding: 30px 0 100px 0;
+  }
+
+  .bottom-logo, .social {
+    margin: 30px 0;
+  }
+}
+
